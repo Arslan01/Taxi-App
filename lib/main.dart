@@ -3,6 +3,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
 import 'package:taxi_app/screens/home_screen.dart';
 
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+
 void main() => runApp(MultiBlocProvider(providers: [
       BlocProvider<TaxiBookingBloc>(
         create: (context) => TaxiBookingBloc(),
